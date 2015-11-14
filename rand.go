@@ -22,6 +22,7 @@ type Rand struct {
 	*r.Rand
 }
 
+// include s, not include e
 func (rnd *Rand) IntRange(s, e int) int {
 	return rnd.Intn(e-s) + s
 }
